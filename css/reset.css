@@ -1,0 +1,25 @@
+@charset "utf-8";
+
+html{
+    font-size: 10px;
+}
+body{
+    overflow-x: hidden;
+}
+html,body,h1,h2,h3,h4,h5,h6,ul,ol,dl,dt,dd{
+    margin: 0;
+    padding: 0;
+}
+h1,h2,h3,h4,h5,h6{
+    font-size: 100%;
+}
+ul,ol{
+    list-style: none;
+}
+a{
+    text-decoration: none;
+}
+img{
+    border: none;
+    vertical-align: bottom;
+}
