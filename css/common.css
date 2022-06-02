@@ -1,0 +1,27 @@
+@charset "utf-8";
+
+#body{
+    font-size: 18px;
+}
+#header{
+    width: 95%;
+    height: 90px;
+    position: fixed;
+    z-index: 9999;
+    display: flex;
+    justify-content: space-between;
+    border: 1px solid rgb(116, 116, 116);
+    left: 2%;
+    top: 2%;
+    align-items: center;
+}
+.tlogo{
+    margin: 0 25px;
+}
+.gnb li{
+    display: inline-block;
+    overflow: hidden;
+}
+.gnb li>a {
+    padding: 0 13px;
+}
