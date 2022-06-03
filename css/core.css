@@ -1,1 +1,26 @@
 @charset "utf-8";
+
+/* 웹폰트 */
+@import url('https://fonts.googleapis.com/css2?family=Fredoka+One&family=Kdam+Thmor+Pro&family=Nanum+Gothic:wght@700&display=swap');
+/* 
+font-family: 'Fredoka One', cursive;
+font-family: 'Kdam Thmor Pro', sans-serif;
+font-family: 'Nanum Gothic', sans-serif;
+*/
+
+section > div {
+    padding-top: 180px;
+}
+
+/* 공통 클래스 */
+.inner{
+    max-width: 80%;
+    margin-left: 13%;
+}
+.bgi{
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    height: 100vh;
+    width: 100vw;
+}
