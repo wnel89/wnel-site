@@ -8,6 +8,10 @@ font-family: 'Kdam Thmor Pro', sans-serif;
 font-family: 'Nanum Gothic', sans-serif;
 */
 
+#section1, #section2 {
+    position: relative;
+}
+
 section > div {
     padding-top: 160px;
 }

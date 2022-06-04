@@ -1,9 +1,10 @@
 @charset "utf-8";
 
-#body{
+#body {
     font-size: 18px;
 }
-#header{
+
+#header {
     width: 95%;
     height: 90px;
     position: fixed;
@@ -17,36 +18,108 @@
     background-color: rgba(255, 255, 255, 0.3);
     backdrop-filter: blur(5px);
 }
-.tlogo{
+
+.tlogo {
     margin: 0 25px;
 }
-.gnb{
+
+.gnb {
     margin-right: 3vw;
 }
-.gnb li{
+
+.gnb li {
     display: inline-block;
     overflow: hidden;
     margin-left: 3vw;
     font-family: 'Kdam Thmor Pro', sans-serif;
 }
 /* header 영역 */
-#section1{
-    position: relative;
-}
-.sec1{
-    height: 75vh;
+
+.sec1 {
+    height: 68vh;
     display: flex;
     justify-content: flex-start;
     align-items: center;
 }
-.scroll{
+
+.scroll {
     display: none;
 }
-.text{
+
+.text h2 {
     font-size: 8rem;
     font-family: 'Kdam Thmor Pro', sans-serif;
 }
-.text p{
+
+.text h3 {
+    line-height: 50px;
     font-size: 2rem;
     font-family: 'Nanum Gothic', sans-serif;
+}
+.text p{
+    font-family: 'Nanum Gothic', sans-serif;
+    line-height: 25px;
+}
+
+#section1 a {
+    padding-top: 70px;
+}
+
+#section1 a span {
+    position: absolute;
+    bottom: 15%;
+    left: 50%;
+    width: 24px;
+    height: 24px;
+    margin-left: -12px;
+    border-left: 1px solid #fff;
+    border-bottom: 1px solid #fff;
+    -webkit-transform: rotate(-45deg);
+    transform: rotate(-45deg);
+    -webkit-animation: sdb05 1.5s infinite;
+    animation: sdb05 1.5s infinite;
+    box-sizing: border-box;
+}
+
+#section1 a p{
+    height: 50px;
+    text-align: center;
+    line-height: 50px;
+    font-family: 'Fredoka One', cursive;
+}
+
+@-webkit-keyframes sdb05 {
+    0% {
+        -webkit-transform: rotate(-45deg) translate(0, 0);
+        opacity: 0;
+    }
+
+    50% {
+        opacity: 1;
+    }
+
+    100% {
+        -webkit-transform: rotate(-45deg) translate(-20px, 20px);
+        opacity: 0;
+    }
+}
+
+@keyframes sdb05 {
+    0% {
+        transform: rotate(-45deg) translate(0, 0);
+        opacity: 0;
+    }
+
+    50% {
+        opacity: 1;
+    }
+
+    100% {
+        transform: rotate(-45deg) translate(-20px, 20px);
+        opacity: 0;
+    }
+}
+
+.sec2{
+    background-color: #fff;
 }
