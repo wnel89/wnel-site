@@ -86,6 +86,7 @@
     text-align: center;
     line-height: 50px;
     font-family: 'Fredoka One', cursive;
+    text-shadow: 1px 1px 2px #fff;
 }
 
 @-webkit-keyframes sdb05 {
@@ -120,6 +121,21 @@
     }
 }
 
-.sec2{
-    background-color: #fff;
+.about_ani {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+.about_wrap{
+    width: 50%;
+}
+.skill_ani {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+.skill_wrap{
+    width: 33%;
 }
