@@ -33,6 +33,7 @@
     margin-left: 3vw;
     font-family: 'Kdam Thmor Pro', sans-serif;
 }
+
 /* header 영역 */
 
 .sec1 {
@@ -56,7 +57,8 @@
     font-size: 2rem;
     font-family: 'Nanum Gothic', sans-serif;
 }
-.text p{
+
+.text p {
     font-family: 'Nanum Gothic', sans-serif;
     line-height: 25px;
 }
@@ -81,7 +83,7 @@
     box-sizing: border-box;
 }
 
-#section1 a p{
+#section1 a p {
     height: 50px;
     text-align: center;
     line-height: 50px;
@@ -127,15 +129,227 @@
     align-items: center;
     text-align: center;
 }
-.about_wrap{
+
+.about_wrap {
     width: 50%;
 }
+
 .skill_ani {
     display: flex;
     justify-content: center;
     align-items: center;
     text-align: center;
 }
-.skill_wrap{
+
+.skill_wrap {
     width: 33%;
 }
+
+.js_cont {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+.js_wrap {
+    width: 50%;
+}
+
+/******************************* 애니메이션 섹션 *******************************/
+.planet {
+    width: 180px;
+    height: 180px;
+    background: url(../images/earth.png) no-repeat 0/100% 100%;
+    border-radius: 50%;
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    margin: 0 auto;
+    animation: shdowAni 10s linear infinite;
+}
+
+@keyframes shdowAni {
+    0% {
+        box-shadow: inset 20px 0px 6px rgba(0, 0, 0, .7);
+    }
+
+    25% {
+        box-shadow: inset 0px 0px 6px rgba(0, 0, 0, .7);
+    }
+
+    50% {
+        box-shadow: inset -24px 0px 6px rgba(0, 0, 0, .7);
+    }
+
+    75% {
+        box-shadow: inset 4px -62px 19px rgba(0, 0, 0, .7);
+    }
+
+    100% {
+        box-shadow: inset 20px 0px 6px rgba(0, 0, 0, .7);
+    }
+}
+
+/* 애니메이션 1 planet */
+
+.cube {
+    position: absolute;
+    width: 180px;
+    height: 180px;
+    top: calc(50% - 90px);
+    left: calc(50% - 90px);
+    transform-style: preserve-3d;
+    transform: rotateX(10deg) rotateY(30deg);
+    animation: rolling 5s linear infinite;
+}
+
+.cube>span {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    opacity: 0.8;
+    outline: 1px solid rgb(34, 34, 34);
+}
+
+.cube>span:first-child {
+    background-color: #444444;
+    transform: rotateY(0deg) translateZ(90px);
+}
+
+.cube>span:nth-child(2) {
+    background-color: #b6b6b6;
+    transform: rotateY(90deg) translateZ(90px);
+}
+
+.cube>span:nth-child(3) {
+    background-color: #444444;
+    transform: rotateY(180deg) translateZ(90px);
+}
+
+.cube>span:nth-child(4) {
+    background-color: #b6b6b6;
+    transform: rotateY(270deg) translateZ(90px);
+}
+
+.cube>span:nth-child(5) {
+    background-color: #6b6b6b;
+    transform: rotateX(90deg) translateZ(90px);
+}
+
+.cube>span:nth-child(6) {
+    background-color: #6b6b6b;
+    transform: rotateX(-90deg) translateZ(90px);
+}
+
+@keyframes rolling {
+    to {
+        transform: rotateX(370deg) rotateY(390deg) rotateZ(360deg);
+    }
+}
+
+/* 애니메이션 2 cube */
+
+.jump {
+    position: absolute;
+    display: flex;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.jump span {
+    padding: 40px 20px;
+    display: table-cell;
+    background-color: #000;
+    animation: jump 2s infinite;
+}
+
+.jump>span:first-child {
+    animation-delay: .1s;
+}
+
+.jump>span:nth-child(2) {
+    animation-delay: .4s;
+}
+
+.jump>span:nth-child(3) {
+    animation-delay: .65s;
+}
+
+.jump>span:nth-child(4) {
+    animation-delay: .9s;
+}
+
+.jump>span:nth-child(5) {
+    animation-delay: .15s;
+}
+
+@keyframes jump {
+    0% {
+        transform: translateY(0px);
+    }
+
+    50% {
+        transform: translateY(-100px);
+    }
+
+    100% {
+        transform: translateY(0px);
+    }
+}
+
+/* 애니메이션 3 jump */
+
+.container {
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.loader {
+    max-width: 18rem;
+    width: 100%;
+    height: auto;
+    stroke-linecap: round;
+}
+
+circle {
+    fill: none;
+    stroke-width: 5.5;
+}
+
+circle:nth-of-type(1) {
+    stroke-dasharray: 1000;
+    stroke-dashoffset: 1000;
+    animation: draw 5s linear infinite;
+}
+
+@keyframes draw {
+    0% {
+        stroke-dashoffset: 1000;
+    }
+
+    50% {
+        stroke-dashoffset: 0;
+    }
+
+    100% {
+        stroke-dashoffset: -1000;
+    }
+}
+
+circle:nth-of-type(2) {
+    stroke-dasharray: 400;
+    animation: swing 3s ease-in-out infinite;
+    transform-origin: 180px 180px;
+    will-change: transform;
+}
+@keyframes swing {
+    50% {
+        transform: rotate(360deg);
+      }
+}
+/* 애니메이션 4 draw */
