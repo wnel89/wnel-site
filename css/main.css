@@ -13,3 +13,13 @@
 .bgi5{
     background-image: url(../images/bgi005.jpg);    
 }
+.icon1{
+    background-image: url(../images/file.png);
+    transform: scale(70%);
+    margin: 0 auto;
+}
+.icon2{
+    background-image: url(../images/smartphone.png);
+    transform: scale(70%);
+    margin: 0 auto;
+}

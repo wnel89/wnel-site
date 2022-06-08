@@ -34,7 +34,7 @@
     font-family: 'Kdam Thmor Pro', sans-serif;
 }
 
-/* header 영역 */
+/* header 끝*/
 
 .sec1 {
     height: 68vh;
@@ -55,12 +55,12 @@
 .text h3 {
     line-height: 50px;
     font-size: 2rem;
-    font-family: 'Nanum Gothic', sans-serif;
+    font-family: 'Gowun Dodum', sans-serif;
 }
 
 .text p {
-    font-family: 'Nanum Gothic', sans-serif;
-    line-height: 25px;
+    font-family: 'Gowun Dodum', sans-serif;
+    line-height: 1.8;
 }
 
 #section1 a {
@@ -123,15 +123,19 @@
     }
 }
 
+/* 섹션 1 끝 */
+
 .about_ani {
     display: flex;
     justify-content: center;
     align-items: center;
     text-align: center;
+    padding: 5% 0;
 }
 
 .about_wrap {
     width: 50%;
+    padding: 5% 0;
 }
 
 .skill_ani {
@@ -139,22 +143,82 @@
     justify-content: center;
     align-items: center;
     text-align: center;
+    padding-bottom: 10%;
 }
 
 .skill_wrap {
     width: 33%;
 }
 
+.skill_svg {
+    padding: 20% 0;
+}
+
+.skill_desc {
+    padding: 5% 0;
+}
+
+/* 섹션 2 끝 */
+
 .js_cont {
+    padding: 10% 0;
+}
+
+.js_cont,
+.js_wrap {
     display: flex;
     justify-content: center;
     align-items: center;
     text-align: center;
 }
 
-.js_wrap {
-    width: 50%;
+.cal {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    background-color: rgba(255, 255, 255, 0.7);
+    width: 80vw;
+    height: 80%;
+    padding: 5%;
 }
+
+#exep {
+    width: 350px;
+    height: 80px;
+    font-size: 20px;
+    line-height: 80px;
+    outline: 1px solid rgb(136, 136, 136);
+    padding: 0 10px;
+    margin: 20px auto;
+    overflow: auto;
+    background-color: rgba(255, 255, 255, 0.7);
+}
+
+button {
+    padding: 0;
+    width: 80px;
+    height: 80px;
+    margin: 5px;
+    font-size: 24px;
+    border-radius: 50%;
+}
+
+#btns {
+    width: 460px;
+    margin: 0 auto;
+}
+
+.bbtn {
+    width: 130px;
+}
+
+.cal_desc {
+    text-align: left;
+}
+
+/* 섹션 3 끝 */
+
 
 /******************************* 애니메이션 섹션 *******************************/
 .planet {
@@ -347,9 +411,52 @@ circle:nth-of-type(2) {
     transform-origin: 180px 180px;
     will-change: transform;
 }
+
 @keyframes swing {
     50% {
         transform: rotate(360deg);
-      }
+    }
 }
+
 /* 애니메이션 4 draw */
+/* 섹션 4 끝 */
+
+.po_cont {
+    padding: 8% 0;
+}
+
+.po_wrap {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    overflow: hidden;
+    padding: 5% 4%;
+    background-color: rgba(255, 255, 255, 0.7);
+
+}
+
+.po_wrap div img {
+    width: 45vw;
+}
+
+/* 하단영역 */
+
+.end{
+    text-align: center;
+    padding: 2% 0;
+}
+
+.ScrollButton {
+    position: fixed;
+    right: 35px;
+    cursor: pointer;
+    z-index: 10;
+    /* display: none; */
+}
+#TopButton {
+    bottom: 45px;
+}
+#TopButton img{
+    max-width: 50px;
+    height: auto;
+}

@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="ko">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -7,9 +8,12 @@
     <title>wnel-site</title>
     <!-- css -->
     <link rel="stylesheet" href="/css/main.css">
+    <script src="./js/smoothScroll20.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
     <!-- js -->
     <script src="./js/main.js"></script>
 </head>
+
 <body id="body">
     <!-- 상단영역 -->
     <header id="header">
@@ -44,32 +48,102 @@
                 </div>
                 <div class="text">
                     <h2>WELCOME TO MY PORTFOLIO</h2>
-                    <h3>안녕하세요. 저의 포트폴리오에 오신 걸 환영합니다.</h3>
+                    <h3>
+                        안녕하세요. 언제나 발전하고픈 신입 웹퍼블리셔 김연주입니다.<br>
+                        제 포트폴리오에 방문해 주셔서 감사합니다.<br>
+                        편안하게 둘러봐주세요!
+                    </h3>
                 </div>
             </div>
-            <a href="#section2"><span></span><p>Scroll Down</p></a>
+            <a href="#section2"><span></span>
+                <p>Scroll Down</p>
+            </a>
         </section>
-        <!-- 섹션1 -->
+        <!-- 섹션1 끝 -->
         <section id="section2" class="bgi">
             <div class="sec2 inner">
                 <div class="text">
                     <h2>ABOUT ME</h2>
                     <h3>"자소서에 쓸 것 같은 한 문장"</h3>
-                    <p>여기에 주저리주저리 뭐라고뭐라고 쓰기<br>주절주절</p>
+                    <p>
+                        목표는 완성, 더 나아가 완벽을 추구하고 싶은 신입 웹퍼블리셔 김연주입니다. 제 의지로 변화해가는 웹사이트를 가장 처음 경험했을 때의 감정은 즐거움과 흥미로움으로
+                        가득했습니다. 한가지를 추가하면 곧바로 변화하는 과정에 뿌듯함을 느꼈고 그 모든 과정들이 저에게는 이정표가 되었습니다. 이정표를 따라 걷다보면 저의 부족함을 여실히 느끼기도
+                        합니다. 하지만 부족함을 겪고나면 반드시 알아야만 한다는 욕심은 저의 원동력 중 하나입니다. 프론트엔드와 퍼블리싱의 깊은 배움을 얻고자 강남아이티아카데미에서
+                        Front-end(프론트엔드) IT소프트웨어 웹개발 과정을 수료하였습니다. 신입이기에 부족한 점이 많지만 부족한 채로 멈춰있지 않고 더욱이 나아가고자 하는 열정을 보여드리고
+                        싶습니다.
+                    </p>
                 </div>
                 <div class="about">
                     <ul class="about_ani">
-                        <li class="about_wrap">뭐넣냐</li>
-                        <li class="about_wrap">연락처</li>
+                        <li class="about_wrap">
+                            <div class="i_img icon1"></div>
+                            <div class="about_desc">
+                                <h3>학력</h3>
+                                <p>
+                                    - [2013. 03 ~ 2016. 02] 동안고등학교 자연계열 졸업<br>
+                                    - [2016. 03 ~ 2022. 08] 동덕여자대학교 컴퓨터학과 졸업예정<br>
+                                    - [2022. 02 ~ 2022. 04] 강남아이티아카데미 수료<br>
+                                    └ 교육과정 : Front-end(프론트엔드) IT소프트웨어 웹개발
+                                </p>
+                            </div>
+                        </li>
+                        <li class="about_wrap">
+                            <div class="i_img icon2"></div>
+                            <div class="about_desc">
+                                <h3>연락처</h3>
+                                <p>
+                                    🐤 김연주 / 경기도 안양시<br>
+                                    🎈 1997. 08. 09<br>
+                                    ✉️ wnel8977@gmail.com<br>
+                                    📞 010-4835-9848<br>
+                                    👨‍💻 Github : <a href="https://github.com/wnel89"
+                                        target="_blank">https://github.com/wnel89</a>
+                                </p>
+                            </div>
+                        </li>
                     </ul>
                     <ul class="skill_ani">
-                        <li class="skill_wrap">HTML & CSS</li>
-                        <li class="skill_wrap">Javascript & jQuery</li>
-                        <li class="skill_wrap">Ajax & Vue.js</li>
+                        <li class="skill_wrap">
+                            <div class="skill_svg">
+                                <svg class="loader" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 360 360">
+                                    <circle cx="180" cy="180" r="160" stroke="#E2007C" />
+                                    <circle cx="180" cy="180" r="110" stroke="#404041" />
+                                </svg>
+                            </div>
+                            <div class="skill_desc">
+                                <h3>HTML & CSS</h3>
+                                <p>95%</p>
+                            </div>
+                        </li>
+                        <li class="skill_wrap">
+                            <div class="skill_svg">
+                                <svg class="loader" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 360 360">
+                                    <circle cx="180" cy="180" r="160" stroke="#E2007C" />
+                                    <circle cx="180" cy="180" r="110" stroke="#404041" />
+                                </svg>
+                            </div>
+                            <div class="skill_desc">
+                                <h3>Javascript & jQuery</h3>
+                                <p>70%</p>
+                            </div>
+                        </li>
+                        <li class="skill_wrap">
+                            <div class="skill_svg">
+                                <svg class="loader" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 360 360">
+                                    <circle cx="180" cy="180" r="160" stroke="#E2007C" />
+                                    <circle cx="180" cy="180" r="110" stroke="#404041" />
+                                </svg>
+                            </div>
+                            <div class="skill_desc">
+                                <h3>Ajax & Vue.js</h3>
+                                <p>60%</p>
+                            </div>
+                        </li>
                     </ul>
                 </div>
             </div>
         </section>
+        <!-- 섹션2 끝 -->
         <section id="section3" class="bgi bgi3">
             <div class="sec3 inner">
                 <div class="text">
@@ -78,15 +152,49 @@
                 <div class="script">
                     <ul class="js_cont">
                         <li class="js_wrap">
-                            계산기
-                        </li>
-                        <li class="js_wrap">
-                            예시2
+                            <div class="cal">
+                                <div class="calcu">
+                                    <div id="exep"></div>
+                                    <div id="btns">
+                                        <button onClick="calcu(1)">1</button>
+                                        <button onClick="calcu(2)">2</button>
+                                        <button onClick="calcu(3)">3</button>
+                                        <button onClick="calcu(4)">4</button>
+                                        <button onClick="calcu(5)">5</button>
+                                        <button onClick="calcu(6)">6</button>
+                                        <button onClick="calcu(7)">7</button>
+                                        <button onClick="calcu(8)">8</button>
+                                        <button onClick="calcu(9)">9</button>
+                                        <button onClick="calcu(0)">0</button>
+
+                                        <button onClick="calcu('.')">·</button>
+                                        <button onClick="calcu('＋')">＋</button>
+                                        <button onClick="calcu('－')">－</button>
+                                        <button onClick="calcu('×')">×</button>
+                                        <button onClick="calcu('÷')">÷</button>
+                                        <button onClick="calcu('＝')">＝</button>
+
+                                        <button class="bbtn" onClick="location.reload()">Reset</button>
+                                        <button onClick="delNum()" class="bbtn">Del</button>
+                                    </div>
+                                </div>
+                                <div class="cal_desc">
+                                    <h3>Calcutator</h3>
+                                    <p>
+                                        Javascript를 사용하여 계산기를 구현하였습니다.<br>
+                                        안전장치를 설정하였기 때문에 연산기호를 연속해서 사용할 수 없으며, <br>
+                                        소수점 사용을 1번을 초과할 경우 사용할 수 없습니다.<br>
+                                        계산 결과가 나오면 reset버튼을 누르기 전에는 클릭을 막아두었고 <br>
+                                        연산기호를 가장 앞에 넣을 수 없지만 예외적으로 '－'는 사용이 가능합니다.
+                                    </p>
+                                </div>
+                            </div>
                         </li>
                     </ul>
                 </div>
             </div>
         </section>
+        <!-- 섹션3 끝 -->
         <section id="section4" class="bgi">
             <div class="sec4 inner">
                 <div class="text">
@@ -139,9 +247,9 @@
                         <div class="ani_wrap">
                             <div class="container">
                                 <svg class="loader" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 360 360">
-                                    <circle cx="180" cy="180" r="160" stroke="#E2007C"/>
-                                    <circle cx="180" cy="180" r="110" stroke="#404041"/>
-                               </svg>                                
+                                    <circle cx="180" cy="180" r="160" stroke="#E2007C" />
+                                    <circle cx="180" cy="180" r="110" stroke="#404041" />
+                                </svg>
                             </div>
                         </div>
                         <div class="ani_desc">
@@ -152,15 +260,46 @@
                 </div>
             </div>
         </section>
+        <!-- 섹션4 끝 -->
         <section id="section5" class="bgi bgi5">
             <div class="sec5 inner">
                 <div class="text">
                     <h2>PORTFOLIO</h2>
                 </div>
+                <div class="pofol_cont">
+                    <article class="pofol">
+                        <div class="po_cont">
+                            <div class="po_wrap">
+                                <div>
+                                    <img src="./images/computer1.jpg" alt="책상 위에 있는 컴퓨터 사진">
+                                </div>
+                                <div class="po_desc">
+                                    <h3>FINAL FANTASY 14 WEB SITE</h3>
+                                    <p>
+                                        웹표준을 준수하여 만든 웹사이트입니다.<br>
+                                        기존의 파이널판타지 14 홈페이지를 벤치마킹하였으며<br>
+                                        모바일 화면을 지원하는 반응형 웹사이트입니다.<br>
+                                        <br>
+                                        <a href="https://wnel89.github.io/" target="_blank">웹사이트 바로가기</a>
+
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                    </article>
+                </div>
             </div>
         </section>
+        <!-- 섹션5 끝 -->
     </main>
-
     <!-- 하단영역 -->
+    <footer id="footer">
+        <div class="end">
+            <p>Thank you for visiting my Website.</p>
+            <p>KIMYEONJU © 2022PORTFOLIO</p>
+        </div>
+        <a id="TopButton" class="ScrollButton"><img src="./images/up-arrow.png"></a>
+    </footer>
 </body>
+
 </html>
