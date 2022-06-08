@@ -32,6 +32,21 @@
     overflow: hidden;
     margin-left: 3vw;
     font-family: 'Kdam Thmor Pro', sans-serif;
+    position: relative;
+}
+.gnb li a::after{
+    content: '';
+    position: absolute;
+    bottom: 4px;
+    left: 0;
+    width: 0%;
+    height: 9px;
+    background-color: rgba(0, 0, 0, 0.3);
+    transform: skew(-20deg);
+    transition: .4s;
+}
+.gnb li:hover a::after{
+    width: 100%;
 }
 
 /* header 끝*/
