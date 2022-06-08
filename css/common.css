@@ -89,8 +89,8 @@
     width: 24px;
     height: 24px;
     margin-left: -12px;
-    border-left: 1px solid #fff;
-    border-bottom: 1px solid #fff;
+    border-left: 1px solid rgb(0, 0, 0);
+    border-bottom: 1px solid rgb(0, 0, 0);
     -webkit-transform: rotate(-45deg);
     transform: rotate(-45deg);
     -webkit-animation: sdb05 1.5s infinite;
@@ -100,10 +100,18 @@
 
 #section1 a p {
     height: 50px;
+    width: 150px;
+    margin: 0 auto;
     text-align: center;
     line-height: 50px;
     font-family: 'Fredoka One', cursive;
-    text-shadow: 1px 1px 2px #fff;
+    border: 1px solid #000;
+    border-radius: 90px;
+    transition: .4s;
+}
+#section1 a p:hover{
+    background-color: rgba(255, 255, 255, 0.3);
+    transition: .4s;
 }
 
 @-webkit-keyframes sdb05 {
@@ -216,7 +224,7 @@ button {
     height: 80px;
     margin: 5px;
     font-size: 24px;
-    border-radius: 50%;
+    border-radius: 90px;
 }
 
 #btns {
@@ -449,10 +457,19 @@ circle:nth-of-type(2) {
     background-color: rgba(255, 255, 255, 0.7);
 
 }
-
+.po_desc p a::after, .about_desc p a::after{
+    content: '';
+    background-image: url(../images/blank.png);
+    background-size: contain;
+    display: inline-block;
+    width: 20px;
+    height: 20px;
+    margin: 0 3px 5px 3px;
+}
 .po_wrap div img {
     width: 45vw;
 }
+/* 섹션 5 끝 */
 
 /* 하단영역 */
 
