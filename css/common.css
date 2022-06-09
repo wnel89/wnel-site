@@ -54,10 +54,10 @@
 
 .ham{
     position: absolute;
-    top: 0px;
-    right: -25px;
+    top: -25px;
+    right: -15px;
     font-size: 35px;
-    transform: scaleX(1.5);
+    transform: scaleX(1.2);
     background-color: transparent;
     border: none;
     display: none;
