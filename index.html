@@ -18,26 +18,21 @@
     <!-- 상단영역 -->
     <header id="header">
         <h1 class="tlogo">Top logo</h1>
-        <div class="gnb">
-            <nav>
-                <ul>
-                    <li><a href="#section1">Home</a></li>
-                    <li><a href="#section2">About</a></li>
-                    <li><a href="#section3">Script</a></li>
-                    <li><a href="#section4">Animation</a></li>
-                    <li><a href="#section5">Portfolio</a></li>
-                </ul>
-            </nav>
+        <div class="hambtn">
+            <div class="gnb">
+                <nav>
+                    <ul>
+                        <li><a href="#section1">Home</a></li>
+                        <li><a href="#section2">About</a></li>
+                        <li><a href="#section3">Script</a></li>
+                        <li><a href="#section4">Animation</a></li>
+                        <li><a href="#section5">Portfolio</a></li>
+                    </ul>
+                </nav>
+            </div>
+            <!-- 모바일용 -->
+            <button class="ham" onclick="chg()"></button>
         </div>
-        <!-- 모바일용 -->
-        <!-- 
-            <div class="mGnb">
-            <a href="#">
-                <span></span>
-            </a>
-        </div>
-         -->
-        <!-- 모바일용 -->
     </header>
     <!-- 메인영역 -->
     <main id="content">
@@ -176,7 +171,7 @@
                                         <button onClick="calcu('＝')">＝</button>
                                         <button onClick="calcu('＋')">＋</button>
                                         <br>
-                                        
+
                                         <button class="bbtn" onClick="location.reload()">Reset</button>
                                         <button onClick="delNum()" class="bbtn">Del</button>
                                     </div>

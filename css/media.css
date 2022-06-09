@@ -12,7 +12,50 @@
     }
 
     #header {
+        background-color: transparent;
+        border: none;
+        backdrop-filter: blur(0px);
+    }
+
+    h1.tlogo,
+    .gnb {
         display: none;
+    }
+    .gnb {
+        position: fixed;
+        top: -15px;
+        left: -10px;
+        width: 100vw;
+        height: 16vh;
+        background-color: rgba(0, 0, 0, 0.6);
+    }
+    .gnb ul{
+        margin-top: 6vh;
+    }
+    .gnb li{
+
+        margin-left: 3.5vw;
+    }
+    .gnb li a{
+        color: #fff;
+    }
+
+    .ham {
+        display: block;
+    }
+
+    .on .gnb {
+        display: block;
+    }
+
+    .on button.ham::before {
+        content: '×';
+        color: #fff;
+    }
+
+    .on button.ham {
+        position: fixed;
+        transform: scale(1.5);
     }
 
     .text h2 {
@@ -69,46 +112,60 @@
         width: 15vw;
         height: 10vh;
     }
-    .cal_desc h3{
+
+    .cal_desc h3 {
         line-height: 75px;
         text-align: center;
     }
-    .cal_desc p{
+
+    .cal_desc p {
         font-size: 1.45rem;
     }
-    .animation{
+
+    .animation {
         flex-direction: column;
     }
-    .ani_cont{
+
+    .ani_cont {
         width: 100%;
     }
-    .ani_desc h3{
+
+    .ani_desc h3 {
         font-size: 2.5rem;
     }
-    .ani_desc p{
+
+    .ani_desc p {
         font-size: 1.8rem;
     }
-    .po_wrap{
+
+    .po_wrap {
         flex-direction: column;
     }
-    .po_wrap div img{
+
+    .po_wrap div img {
         width: 73vw;
     }
-    .po_desc h3{
+
+    .po_desc h3 {
         font-size: 2rem;
         line-height: 45px;
         text-align: center;
     }
-    .po_desc p{
+
+    .po_desc p {
         font-size: 1.5rem;
     }
-    .po_desc p a::after, .about_desc p a::after{
+
+    .po_desc p a::after,
+    .about_desc p a::after {
         width: 15px;
         height: 15px;
     }
-    #TopButton img{
+
+    #TopButton img {
         max-width: 40px;
     }
+
     #TopButton {
         bottom: 20px;
     }

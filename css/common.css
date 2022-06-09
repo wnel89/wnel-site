@@ -3,6 +3,9 @@
 #body {
     font-size: 18px;
 }
+.ham{
+    display: none;
+}
 
 #header {
     width: 95%;
@@ -47,6 +50,23 @@
 }
 .gnb li:hover a::after{
     width: 100%;
+}
+
+.ham{
+    position: absolute;
+    top: 0px;
+    right: -25px;
+    font-size: 35px;
+    transform: scaleX(1.5);
+    background-color: transparent;
+    border: none;
+    display: none;
+}
+.ham::before{
+    content: '≡';
+}
+.ham:focus{
+    outline: none;
 }
 
 /* header 끝*/
@@ -225,6 +245,7 @@ button {
     margin: 5px;
     font-size: 24px;
     border-radius: 90px;
+    cursor: pointer;
 }
 
 #btns {

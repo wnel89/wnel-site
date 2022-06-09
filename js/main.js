@@ -146,3 +146,8 @@ $(function() {
   });
 });
 // back to top 버튼 설정
+
+function chg() {
+  var hambtn = document.getElementsByClassName("hambtn").item(0);
+  hambtn.classList.toggle("on");
+}
