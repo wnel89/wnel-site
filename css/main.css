@@ -2,6 +2,7 @@
 @import url(reset.css);
 @import url(common.css);
 @import url(core.css);
+@import url(media.css);
 
 .bgi1{
     background-image: url(../images/bgi001.jpg);

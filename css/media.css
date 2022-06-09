@@ -1,0 +1,115 @@
+@charset "utf-8";
+
+@media screen and (max-width:500px) {
+
+    html,
+    body {
+        overflow-x: hidden;
+    }
+
+    section>div {
+        padding-top: 13vh;
+    }
+
+    #header {
+        display: none;
+    }
+
+    .text h2 {
+        font-size: 5rem;
+    }
+
+    .text h3 {
+        font-size: 1.5rem;
+        line-height: 35px;
+    }
+
+    .text p {
+        font-size: 1.45rem;
+    }
+
+    #section1 a span {
+        bottom: 25%;
+    }
+
+    .about_desc p {
+        font-size: 1.45rem;
+        text-align: center;
+        margin: 5% 0;
+        line-height: 2.5;
+    }
+
+    .about_ani {
+        flex-direction: column;
+    }
+
+    .about_wrap {
+        width: 100%;
+    }
+
+    .skill_desc h3 {
+        font-size: 1.5rem;
+        height: 50px;
+
+    }
+
+    .skill_ani {
+        align-items: stretch;
+    }
+
+    .cal {
+        flex-direction: column;
+    }
+
+    #exep {
+        width: 70vw;
+    }
+
+    button {
+        width: 15vw;
+        height: 10vh;
+    }
+    .cal_desc h3{
+        line-height: 75px;
+        text-align: center;
+    }
+    .cal_desc p{
+        font-size: 1.45rem;
+    }
+    .animation{
+        flex-direction: column;
+    }
+    .ani_cont{
+        width: 100%;
+    }
+    .ani_desc h3{
+        font-size: 2.5rem;
+    }
+    .ani_desc p{
+        font-size: 1.8rem;
+    }
+    .po_wrap{
+        flex-direction: column;
+    }
+    .po_wrap div img{
+        width: 73vw;
+    }
+    .po_desc h3{
+        font-size: 2rem;
+        line-height: 45px;
+        text-align: center;
+    }
+    .po_desc p{
+        font-size: 1.5rem;
+    }
+    .po_desc p a::after, .about_desc p a::after{
+        width: 15px;
+        height: 15px;
+    }
+    #TopButton img{
+        max-width: 40px;
+    }
+    #TopButton {
+        bottom: 20px;
+    }
+}
