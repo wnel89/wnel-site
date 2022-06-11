@@ -24,3 +24,8 @@
     transform: scale(70%);
     margin: 0 auto;
 }
+.tlogo{
+    background: url(../images/top_logo.png) no-repeat;
+    width: 150px;
+    height: 100px;
+}

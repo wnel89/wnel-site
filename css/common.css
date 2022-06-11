@@ -194,8 +194,107 @@
 }
 
 .skill_svg {
-    padding: 20% 0;
+    padding: 10% 0;
 }
+
+.skill_ld{
+    max-width: 15rem;
+    width: 100%;
+    height: auto;
+}
+
+.skill_cir{
+    fill: none;
+    max-width: 25rem;
+}
+
+.skill_cir circle:nth-of-type(1),
+.skill_cir circle:nth-of-type(4){
+    stroke-width: 3.5;
+}
+.skcir2{
+    stroke-width: 1.5;
+    stroke-dasharray: 7.5;
+    animation: rotate 6s linear infinite;
+    transform-origin: 50% 50%;
+}
+
+.skcir3{
+    stroke-width: 1.5;
+    stroke-dasharray: 10;
+    animation: re-rotate 6s linear infinite;
+    transform-origin: 50% 50%;
+}
+
+@keyframes rotate {
+    100%{
+        transform: rotate(360deg);
+    }
+}
+
+@keyframes re-rotate {
+    100%{
+        transform: rotate(-360deg);
+    }
+}
+
+.skcir6{
+    stroke-width: 2.5;
+    animation: disappear 5s linear infinite;
+}
+
+.skcir7{
+    stroke-width: 2.5;
+    animation: disappear 5s linear 2.5s infinite;
+}
+
+@keyframes disappear {
+    0%{
+        opacity: 0;
+    }
+    50%{
+        opacity: 1;
+    }
+    100%{
+        opacity: 0;
+    }
+}
+
+.skcir10{
+    stroke-width: 2;
+    stroke-dasharray: 2.5;
+    transform-origin: center;
+    animation: re-big-small 5s linear infinite;
+}
+
+.skcir11{
+    transform-origin: center;
+    animation: big-small 5s linear infinite;
+}
+
+@keyframes big-small {
+    0%{
+        transform: scale(1);
+    }
+    50%{
+        transform: scale(1.5);
+    }
+    100%{
+        transform: scale(1);
+    }
+}
+@keyframes re-big-small {
+    0%{
+        transform: scale(1);
+    }
+    50%{
+        transform: scale(0.5);
+    }
+    100%{
+        transform: scale(1);
+    }
+}
+
 
 .skill_desc {
     padding: 5% 0;
@@ -416,7 +515,6 @@ button {
     top: 50%;
     transform: translate(-50%, -50%);
 }
-
 .loader {
     max-width: 18rem;
     width: 100%;
@@ -424,12 +522,9 @@ button {
     stroke-linecap: round;
 }
 
-circle {
+.ani_cir1 {
     fill: none;
     stroke-width: 5.5;
-}
-
-circle:nth-of-type(1) {
     stroke-dasharray: 1000;
     stroke-dashoffset: 1000;
     animation: draw 5s linear infinite;
@@ -449,7 +544,9 @@ circle:nth-of-type(1) {
     }
 }
 
-circle:nth-of-type(2) {
+.ani_cir2 {
+    fill: none;
+    stroke-width: 5.5;
     stroke-dasharray: 400;
     animation: swing 3s ease-in-out infinite;
     transform-origin: 180px 180px;
@@ -467,10 +564,12 @@ circle:nth-of-type(2) {
 
 .po_cont {
     padding: 8% 0;
+    display: flex;
 }
 
 .po_wrap {
     display: flex;
+    flex: 0 0 auto;
     justify-content: space-between;
     align-items: center;
     overflow: hidden;
@@ -478,6 +577,10 @@ circle:nth-of-type(2) {
     background-color: rgba(255, 255, 255, 0.7);
 
 }
+.po_desc{
+    padding: 0px 2%;
+}
+
 .po_desc p a::after, .about_desc p a::after{
     content: '';
     background-image: url(../images/blank.png);
