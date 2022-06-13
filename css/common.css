@@ -319,7 +319,7 @@
     justify-content: center;
     align-items: center;
     text-align: center;
-    background-color: rgba(255, 255, 255, 0.7);
+    background-color: rgba(255, 255, 255, 0.8);
     width: 80vw;
     height: 80%;
     padding: 5%;
@@ -574,7 +574,7 @@ button {
     align-items: center;
     overflow: hidden;
     padding: 5% 4%;
-    background-color: rgba(255, 255, 255, 0.7);
+    background-color: rgba(255, 255, 255, 0.8);
 
 }
 .po_desc{
